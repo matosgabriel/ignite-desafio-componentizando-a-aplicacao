@@ -1,12 +1,11 @@
-import React from "react";
+import React from 'react';
 
 interface IconProps {
   name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
   color: string;
 }
 
-export function Icon(props: IconProps) {
-
+function Icon(props: IconProps) {
   switch (props.name) {
     case 'action':
       return (
@@ -50,3 +49,5 @@ export function Icon(props: IconProps) {
       );
   }
 }
+
+export { Icon }
