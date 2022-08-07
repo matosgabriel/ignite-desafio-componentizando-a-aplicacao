@@ -15,7 +15,7 @@ interface SideBarProps {
 
 function SideBar({ genres, handleClickButton, selectedGenreId }: SideBarProps) {
   return (
-    <nav className="sidebar">
+    <nav className="sidebar" style={{ height:'100vh' }}>
       <span>Watch<p>Me</p></span>
 
       <div className="buttons-container">

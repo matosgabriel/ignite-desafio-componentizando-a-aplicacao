@@ -25,7 +25,7 @@ interface ContentProps {
 
 function Content({movies, selectedGenre}: ContentProps) {
   return (
-    <div className="container">
+    <div className="container" style={{ height: '100%', overflowY: 'scroll' }}>
       <header>
         <span className="category">Categoria:<span> {selectedGenre.title}</span></span>
       </header>
